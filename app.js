@@ -28,6 +28,7 @@ db.once('open', () => console.log(`Connected to Atlas`));
 app.get('/', (req, res) => {
     res.send(`Project Deployed Successfully`);
 });
+
 app.listen(port, () => {
     console.log(`API is now online on port ${port}`);
 });
