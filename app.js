@@ -2,7 +2,8 @@
 const express = require('express');
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-
+// const usersRoutes =require('./routes/users');
+// const productsRoutes = require('./routes/products');
 
 
 
@@ -21,7 +22,8 @@ const db = mongoose.connection;
 db.once('open', () => console.log(`Connected to Atlas`));
 
 //[SECTION] Server Routes	
-
+// app.use('/users', usersRoutes);
+// app.use('/products', productsRoutes);
 
 //[SECTION] Server Response
 
